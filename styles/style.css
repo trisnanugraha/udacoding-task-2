@@ -1,0 +1,90 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* sumber gambar untuk background : https://unsplash.com/photos/ePpaQC2c1xA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+.bg-img {
+  background: linear-gradient(
+      to right,
+      hsla(37, 68%, 56%, 0.7),
+      hsla(34, 28%, 53%, 0.7)
+    ),
+    url("/images/background.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.box-form {
+  width: 750px;
+  height: 650px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+}
+
+.box-form h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #504538;
+  margin: 40px 0;
+}
+
+.field-form {
+  padding: 10px 70px;
+}
+
+.field-form input {
+  height: 30px;
+}
+
+.field-form input,
+textarea {
+  font-family: inherit;
+  width: 100%;
+  font-size: 16px;
+  resize: none;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #dba141;
+  border-bottom-width: 2px;
+}
+
+.field-form label {
+  color: #504538;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-submit {
+  padding: 15px 50px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  /* border-color: #b6a99a; */
+  border-style: none;
+  color: #ffffff;
+  background: linear-gradient(to right, #dba143, #a98c66);
+}
+
+/* menghilangkan outline saat field dipilih */
+.field-form input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: #504538;
+}
+
+/* mengubah warna button saat di hover */
+.btn-submit:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(37, 68%, 56%, 0.8), hsl(34, 28%, 53%, 0.8));
+}
